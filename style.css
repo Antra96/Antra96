@@ -1,0 +1,452 @@
+/*Стиль на все элементы*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p, h1, h2, h3, hr {
+	margin: 1% 0;
+}
+
+h1, h2, h3 {
+	text-shadow: 0 0 0.1em #F3C0E2; 
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	overflow: scroll;
+}
+
+body {
+	background: white url(images/background-cupcakes-and-croissants.jpg) repeat;
+	color: #141800;
+	font-size: 14px;
+	font-family: Garamond, Arial, sans-serif;
+}
+
+/*Стиль основного блока сайта*/
+
+.pagespace {
+	background: rgba(262, 134, 134, 0.95);
+	margin: 2% auto;
+	width: 85%;
+	padding: 1% 2%;
+	border: 2px ridge #fff;
+	display: table;
+}
+
+/*Стили специальных объектов, классов и т. д.*/
+
+.clearfix {
+	height: 0;
+	clear: both;
+}
+
+.buy_form {
+	margin: 1.2% auto;
+	padding: 1% 3% 0.9% 2.9%;
+	color: #9C1818;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 55%;
+	background: rgb(255,242,242); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,242,242,1) 0%, rgba(255,239,252,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,242,242,1) 0%,rgba(255,239,252,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,242,242,1) 0%,rgba(255,239,252,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff2f2', endColorstr='#ffeffc',GradientType=0 ); /* IE6-9 */
+	display: block;
+	width: 10%;
+    text-align: center;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-box-shadow: 2px 1px 5px 2px rgba(255,255,255,0);
+	box-shadow: 2px 1px 5px 2px rgba(255,255,255,0);
+}
+
+.catalog_buy_form {
+	padding: 1.1% 2.9% 0.9% 2.8%;
+	width: 15%;
+}
+
+main .buy_form img {
+	width: 25px;
+	height: 25px;
+	border: 0;
+}
+
+.buy_form:hover {
+	background: rgb(242,220,236); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(242,220,236,1) 0%, rgba(249,221,217,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(242,220,236,1) 0%,rgba(249,221,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(242,220,236,1) 0%,rgba(249,221,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2dcec', endColorstr='#f9ddd9',GradientType=0 ); /* IE6-9 */;
+}
+
+.buy_form:focus {
+	background: rgb(168,132,151); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(168,132,151,1) 0%, rgba(237,189,231,1) 49%, rgba(188,173,188,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(168,132,151,1) 0%,rgba(237,189,231,1) 49%,rgba(188,173,188,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(168,132,151,1) 0%,rgba(237,189,231,1) 49%,rgba(188,173,188,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a88497', endColorstr='#bcadbc',GradientType=0 ); /* IE6-9 */
+
+}
+
+/*Стиль заголовка, повторяющегося на каждой странице*/
+
+.logo {
+	float: left;
+	width: 11%;
+	min-width: 75px;
+	-webkit-transform: skewX(-15deg); 
+	-moz-transform: skewX(-15deg); 
+	-ms-transform: skewX(-15deg); 
+	-o-transform: skewX(-15deg); 
+	transform: skewX(-15deg); 
+}
+
+.logo img {
+	width: 100%;
+}
+
+header ul {
+	text-align: center;
+}
+
+header li {
+	display: inline-block;
+	font-size: 1.5em;
+	margin: 1.5% 0.5% 0.5%;
+	min-width: 12%;
+}
+
+header li a {
+	display: block;
+	color: #141800;
+	border: 2px groove #fff;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.4);
+    color: #141800;
+	width: 100%;
+}
+
+header li a:hover {
+	background: #fff;
+	border-style: ridge;
+}
+
+header li a:active {
+	color: #fff;
+}
+
+header li a[href="#"], header li a[href="#"]:hover,  header li a[href="#"]:active {
+	background: rgba(255, 255, 255, 0.8);
+	border-style: ridge;
+}
+
+/*Стиль главной части, меняющейся на каждой странице*/
+
+ main {
+ 	margin: 2% 0;
+ 	min-height: 400px;
+	min-height: 58vh;
+ }
+
+/*Стиль главной страницы*/
+
+.greeting {
+	font-size: 1.3em;
+	color: #330B1F;
+	text-align: center;
+	margin: 2% 5% 0 5%;
+}
+ /*Стиль страниц продукта(+новости, +о нас)*/
+
+.page_head {
+	text-align: center;
+}
+
+.page_head img {
+	border: 2px ridge #fff;
+}
+
+.page_head h1 {
+	margin-bottom: 2%;
+}
+
+.product_short {
+	background: rgba(255, 255, 255, 0.4);
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	border: 2px ridge #fff;
+	line-height: 1.1em;
+}
+	
+.product_head img {
+	max-width: 50%;
+}
+
+.textflow {
+	margin: 1.5% 0;
+}
+
+.textflow h3 {
+	margin-bottom: 0.4%;
+}
+
+.textflow p, .textflow ul {
+	margin: 0.4% 0;
+}
+
+.product_facts ul {
+	margin-left: 1.5%;
+}
+
+.price {
+	font-weight: bolder;
+	margin-top: 0;
+}
+
+/*Стиль страницы-каталога*/
+
+.side_nav ul {
+	 padding: 0 2%;
+	 font-size: 16px;
+	 list-style: none;
+	 margin: 0 auto;
+}
+
+.side_nav li {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	text-align: center;
+	margin: 1%;
+	min-width: 300px;
+}
+
+
+.catalog_link {
+	color: #141800;
+	text-decoration: none;
+	display: block;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	padding: 1% 0;
+}
+
+.catalog_link:hover {
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.catalog_link:active {
+	color: #fff;
+}
+
+.catalog_pic {
+	outline: 2px ridge #fff;
+	outline-offset: -2px;
+}
+
+.catalog_pic:hover {
+	outline: 10px solid rgba(0, 0, 0, 0.3);
+	outline-offset: -12px;
+}
+
+.catalog_desc {
+	font-size: 14px;
+	display: none;
+}
+
+.side_nav ul li:active .catalog_desc, .side_nav ul li:hover .catalog_desc, .catalog_desc:hover {
+	display: block;
+}
+
+.side_nav p {
+	text-align: left;
+}
+
+/*Стиль страницы контактов*/
+
+.contact-wrapper {
+    display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-items: top;
+}
+	
+	/*Сначала стиль блока с формой*/
+
+.contact_form {
+	float: left; /*флексбоксы не видят флоаты*/
+	vertical-align: top;
+	margin-top: 1%;
+	text-align: left;
+	padding: 1%;
+	border: 2px ridge #fff;
+	border-radius: 5px;
+	width: 45%;
+	min-width: 200px;
+}
+
+.contact_form h3, .contact_info h3 {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.contact_form ul, .contact_info ul {
+	list-style: none;
+	margin: 3% 0 2% 8%
+}
+
+.contact_form li {
+	display: block;
+	width: 100%;
+	padding: 0;
+}
+
+		/*Стили элементов самой формы в состоянии покоя*/
+
+.contact_form input, .contact_form textarea {
+	font-family: Garamond, Arial, sans-serif;
+	font-size: 1em;
+	width: 85%;
+	color: #2D1E36;
+	margin: 1% 0;
+	padding: 1% 1% 1% 2%;
+}
+
+.contact_form input[type="submit"] {
+	width: 40%;
+	min-width: 80px;
+	text-align: center;
+	background: #E5CFD2;
+}
+
+.contact_form input[type="file"] {
+	margin: 0;
+	padding: 1% 0;
+}
+
+/*Позже узнаю*/
+::-moz-placeholder {
+color: #141800;
+font-family: Garamond, Arial, sans-serif; 
+}
+
+::-webkit-input-placeholder {
+color: #141800;
+font-family: Garamond, Arial, sans-serif; 
+}
+/*----*/
+
+		/*Стили элементов формы при наведении, фокусировке*/
+
+.contact_form input[type="text"]:hover, .contact_form textarea:hover {
+	background: #E9BEBE;
+}
+
+.contact_form input[type="text"]:focus, .contact_form textarea:focus {
+	outline: 2px solid #CA767E;
+	outline-offset: -2px;
+	background: #FDDDDD;
+	color: #000;
+}
+
+.contact_form input[type="submit"]:hover {
+	background: #DFB0B0;
+}
+
+.contact_form input[type="submit"]:focus {
+	background: #CD9595;
+	outline-color: #CD9595;
+}
+
+
+/*Затем стиль блока с информацией*/
+
+.contact_info {
+	float: right;
+	vertical-align: top;
+	width: 45%;
+	margin-top: 1%;
+	border: 2px ridge #fff;
+	border-radius: 5px;
+	padding: 1% 2%;
+	min-width: 200px;
+}
+
+.contact_info li {
+	list-style: none;
+}
+
+.contact_info li h4 {
+	font-size: 1.1em;
+	margin: 0.3% 0;
+	text-shadow: 0 0 0.05em #F3C0E2; 
+}
+
+.map_frame {
+	display: block;
+	width: 100%;
+}
+
+.map_frame iframe {
+	width: 96%;
+	min-height: 220px;
+	min-height: 33vh;
+}
+
+/*Стиль "подвала"*/
+
+.footer-wrap {
+	display: table-row;
+}
+
+footer {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	text-align: center;
+	vertical-align: center;
+	line-height: 100%;
+	border: 2px ridge #fff;
+	display: table-cell;
+}
+
+/*медиа*/
+
+@media screen and (max-width: 481px) {
+	
+	.contact-wrapper {
+		flex-direction: column;
+	}
+	
+	.contact_form, .contact_info, .side_nav ul li {
+		width: 100%;
+	}
+	
+	.logo {
+		float: none;
+	}
+	
+	header li {
+		display: block;
+	}
+	
+	.side_nav ul {
+		flex-direction: column;
+	}
+	
+	.side_nav li {
+		width: 90%;
+		margin: 1% auto;
+}
+
+}
